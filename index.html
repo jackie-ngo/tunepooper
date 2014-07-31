@@ -12,26 +12,137 @@
     <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png" />
     <link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="//static.twilio.com/libs/twiliojs/1.2/twilio.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   </head>
   <body>
     <header>TunePooper</header>
     <ul>
-      <li><a href="#">Baby Come Back</a></li>
-      <li><a href="#">Because I Got High</a></li>
-      <li><a href="#">Buy You A Drank</a></li>
-      <li><a href="#">Bye Bye Bye</a></li>
-      <li><a href="#">Call Me Maybe</a></li>
-      <li><a href="#">Hello</a></li>
-      <li><a href="#">I Got 5 On It</a></li>
-      <li><a href="#">It Wasn't Me</a></li>
-      <li><a href="#">Let's Get It On</a></li>
-      <li><a href="#">No Scrubs</a></li>
-      <li><a href="#">Oops I Did It Again</a></li>
-      <li><a href="#">Yeah Okay</a></li>
-      <li><a href="#">You're The Best</a></li>
+      <li>
+        <a>Baby Come Back
+          <form>
+            To: <input type="tel" name="phone"><br />
+            Fr: <input type="tel" name="phone">
+            <div class="close">&times;</div>
+           </form>
+        </a>
+      </li>
+      <li>
+        <a>Because I Got High
+          <form>
+            To: <input type="tel" name="phone"><br />
+            Fr: <input type="tel" name="phone">
+            <div class="close">&times;</div>
+          </form>
+        </a>
+      </li>
+      <li>
+        <a>Buy You A Drank
+          <form>
+            To: <input type="tel" name="phone"><br />
+            Fr: <input type="tel" name="phone">
+            <div class="close">&times;</div>
+          </form>
+        </a>
+      </li>
+      <li>
+        <a>Bye Bye Bye
+          <form>
+            To: <input type="tel" name="phone"><br />
+            Fr: <input type="tel" name="phone">
+            <div class="close">&times;</div>
+          </form></a>
+      </li>
+      <li>
+        <a>Call Me Maybe
+          <form>
+            To: <input type="tel" name="phone"><br />
+            Fr: <input type="tel" name="phone">
+            <div class="close">&times;</div>
+          </form></a>
+      </li>
+      <li>
+        <a>Hello
+          <form>
+            To: <input type="tel" name="phone"><br />
+            Fr: <input type="tel" name="phone">
+            <div class="close">&times;</div>
+          </form>
+        </a>
+      </li>
+      <li>
+        <a>I Got 5 On It
+          <form>
+            To: <input type="tel" name="phone"><br />
+            Fr: <input type="tel" name="phone">
+            <div class="close">&times;</div>
+          </form>
+        </a>
+      </li>
+      <li>
+        <a>It Wasn't Me
+          <form>
+            To: <input type="tel" name="phone"><br />
+            Fr: <input type="tel" name="phone">
+            <div class="close">&times;</div>
+          </form>
+        </a>
+      </li>
+      <li>
+        <a>Let's Get It On
+          <form>
+            To: <input type="tel" name="phone"><br />
+            Fr: <input type="tel" name="phone">
+            <div class="close">&times;</div>
+          </form>
+        </a>
+      </li>
+      <li>
+        <a>No Scrubs
+          <form>
+            To: <input type="tel" name="phone"><br />
+            Fr: <input type="tel" name="phone">
+            <div class="close">&times;</div>
+          </form>
+        </a>
+      </li>
+      <li>
+        <a>Oops I Did It Again
+          <form>
+            To: <input type="tel" name="phone"><br />
+            Fr: <input type="tel" name="phone">
+            <div class="close">&times;</div>
+          </form>
+        </a>
+      </li>
+      <li>
+        <a>Yeah Okay
+          <form>
+            To: <input type="tel" name="phone"><br />
+            Fr: <input type="tel" name="phone">
+            <div class="close">&times;</div>
+          </form>
+        </a>
+      </li>
+      <li>
+        <a>You're The Best
+          <form>
+            To: <input type="tel" name="phone"><br />
+            Fr: <input type="tel" name="phone">
+            <div class="close">&times;</div>
+          </form>
+        </a>
+      </li>
     </ul>
   </body>
+
+  <script type="text/javascript">
+    $('li a').click(function() {
+      $(this).children('form').addClass('open');
+    });
+
+    $('div.close').click(function() {
+      $(this).parent('form').hide();
+    });
+  </script>
 
 </html>
