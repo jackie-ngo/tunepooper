@@ -21,8 +21,7 @@
         <a>Baby Come Back
           <form>
             To: <input type="tel" name="phone"><br />
-            Fr: <input type="tel" name="phone">
-            <div class="close">&times;</div>
+            <button href="sms:+15103936888" class="close">Send</button>
            </form>
         </a>
       </li>
@@ -30,9 +29,8 @@
         <a>Because I Got High
           <form>
             To: <input type="tel" name="phone"><br />
-            Fr: <input type="tel" name="phone">
-            <div class="close">&times;</div>
-          </form>
+            <button href="sms:+15103936888" class="close">Send</button>
+           </form>
         </a>
       </li>
       <li>
@@ -40,7 +38,6 @@
           <form>
             To: <input type="tel" name="phone"><br />
             Fr: <input type="tel" name="phone">
-            <div class="close">&times;</div>
           </form>
         </a>
       </li>
@@ -49,7 +46,6 @@
           <form>
             To: <input type="tel" name="phone"><br />
             Fr: <input type="tel" name="phone">
-            <div class="close">&times;</div>
           </form></a>
       </li>
       <li>
@@ -57,7 +53,6 @@
           <form>
             To: <input type="tel" name="phone"><br />
             Fr: <input type="tel" name="phone">
-            <div class="close">&times;</div>
           </form></a>
       </li>
       <li>
@@ -65,7 +60,6 @@
           <form>
             To: <input type="tel" name="phone"><br />
             Fr: <input type="tel" name="phone">
-            <div class="close">&times;</div>
           </form>
         </a>
       </li>
@@ -74,7 +68,6 @@
           <form>
             To: <input type="tel" name="phone"><br />
             Fr: <input type="tel" name="phone">
-            <div class="close">&times;</div>
           </form>
         </a>
       </li>
@@ -83,7 +76,6 @@
           <form>
             To: <input type="tel" name="phone"><br />
             Fr: <input type="tel" name="phone">
-            <div class="close">&times;</div>
           </form>
         </a>
       </li>
@@ -92,7 +84,6 @@
           <form>
             To: <input type="tel" name="phone"><br />
             Fr: <input type="tel" name="phone">
-            <div class="close">&times;</div>
           </form>
         </a>
       </li>
@@ -101,7 +92,6 @@
           <form>
             To: <input type="tel" name="phone"><br />
             Fr: <input type="tel" name="phone">
-            <div class="close">&times;</div>
           </form>
         </a>
       </li>
@@ -110,7 +100,6 @@
           <form>
             To: <input type="tel" name="phone"><br />
             Fr: <input type="tel" name="phone">
-            <div class="close">&times;</div>
           </form>
         </a>
       </li>
@@ -119,7 +108,6 @@
           <form>
             To: <input type="tel" name="phone"><br />
             Fr: <input type="tel" name="phone">
-            <div class="close">&times;</div>
           </form>
         </a>
       </li>
@@ -128,7 +116,6 @@
           <form>
             To: <input type="tel" name="phone"><br />
             Fr: <input type="tel" name="phone">
-            <div class="close">&times;</div>
           </form>
         </a>
       </li>
@@ -140,8 +127,8 @@
       $(this).children('form').addClass('open');
     });
 
-    $('div.close').click(function() {
-      $(this).parent('form').hide();
+    $('.close').click(function() {
+      $(this).parent('form').removeClass('open');
     });
   </script>
 
