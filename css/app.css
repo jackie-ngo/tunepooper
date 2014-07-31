@@ -1,0 +1,40 @@
+header {
+	background: #222;
+	color: #fff;
+	text-align: center;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 20px;
+	padding: 20px 0;
+}
+
+body {
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+	width: 100%;
+	-webkit-margin-before: 0em;
+	-webkit-padding-start: 0px;
+}
+
+li {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	width: 100%;
+	display: block;
+	padding: 20px 0;
+	border-bottom: solid 1px #ccc;
+	background: #eee;
+}
+
+a:hover {
+	background: #dedede;
+}
+
