@@ -18,12 +18,12 @@
     <header>TunePooper</header>
     <ul>
       <li>
-        <a>Baby Come Back
+        <div class="click">Baby Come Back
           <form>
             To: <input type="tel" name="phone"><br />
-            <button href="sms:+15103936888">Send</button>
+            <a href="sms:+15103936888">Send</a>
            </form>
-        </a>
+        </div>
       </li>
       <li>
         <a>Because I Got High
@@ -123,7 +123,7 @@
   </body>
 
   <script type="text/javascript">
-    $('li a').click(function() {
+    $('li .click').click(function() {
       $(this).children('form').addClass('open');
     });
 
