@@ -52,6 +52,11 @@ form {
 
 form input {
 	margin-top: 30px;
+	position: relative;
+	bottom: 2px;
+	height: 20px;
+	width: 200px;
+	margin-left: 10px;
 }
 
 form.open {
@@ -69,4 +74,18 @@ form.close {
 	font-size: 50px;
 }
 
+form a {
+	background: #764a1d;
+	color: #fff;
+	display: inline;
+	display: inherit;
+	width: 100%;
+	margin: 0 auto;
+	padding: 10px 0;
+	margin-top: 23px;
+}
+
+form a:hover {
+	background: #532700;
+}
 
